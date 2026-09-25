@@ -1,4 +1,4 @@
-# Open University Learning Analytics Dataset - BTN
+# OULAD Data Warehouse
 
 Repo này lưu trữ dữ liệu thô và tài liệu mô tả cho bộ **Open University Learning Analytics Dataset (OULAD)**, phục vụ việc tìm hiểu dữ liệu và chuẩn bị cho các bước phân tích hoặc xây dựng kho dữ liệu.
 
