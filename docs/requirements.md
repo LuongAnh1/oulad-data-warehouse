@@ -1,16 +1,16 @@
-# Yêu cầu nghiệp vụ - Cảnh báo sớm sinh viên có nguy cơ không hoàn thành môn học
+# Bản nháp yêu cầu nghiệp vụ - Cảnh báo sớm sinh viên có nguy cơ không hoàn thành môn học
 
 ## 1. Mục đích tài liệu
 
-Tài liệu này xác định bài toán nghiệp vụ mà nhóm sẽ giải quyết bằng Open University Learning Analytics Dataset (OULAD). Nội dung tập trung vào nhu cầu ra quyết định, phạm vi, quy tắc nghiệp vụ, chỉ số, dữ liệu đầu vào và tiêu chí nghiệm thu. Thiết kế kho dữ liệu, ETL, dashboard hoặc mô hình dự đoán phải được xây dựng từ các yêu cầu này.
+Tài liệu này là một bản nháp/ứng viên bài toán nghiệp vụ mà nhóm có thể xem xét khi làm việc với Open University Learning Analytics Dataset (OULAD). Vì nhóm chưa chốt bài toán cuối cùng, nội dung dưới đây chưa phải phạm vi bắt buộc; nó dùng để tham khảo cách xác định nhu cầu ra quyết định, phạm vi, quy tắc nghiệp vụ, chỉ số, dữ liệu đầu vào và tiêu chí nghiệm thu.
 
-## 2. Bài toán nghiệp vụ được chọn
+## 2. Ứng viên bài toán nghiệp vụ
 
 > Xây dựng hệ thống phân tích cảnh báo sớm giúp đội ngũ học vụ và giảng viên nhận diện, giải thích và ưu tiên hỗ trợ những sinh viên đang học có nguy cơ nhận kết quả `Fail` hoặc `Withdrawn`, dựa trên tiến độ đánh giá và mức độ tham gia VLE quan sát được đến từng mốc thời gian.
 
 Hệ thống không tự động kết luận một sinh viên chắc chắn sẽ thất bại. Kết quả là một danh sách ưu tiên hỗ trợ kèm các tín hiệu giải thích được để con người xem xét trước khi can thiệp.
 
-## 3. Vì sao chọn bài toán này?
+## 3. Vì sao bài toán này đáng cân nhắc?
 
 OULAD phù hợp trực tiếp với bài toán cảnh báo sớm vì dữ liệu mô tả đầy đủ quá trình học theo thời gian:
 

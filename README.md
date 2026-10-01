@@ -10,7 +10,7 @@ Repo này lưu trữ dữ liệu thô, tài liệu mô tả và yêu cầu nghi�
 
 ## Tài liệu chính
 
-- docs/requirements.md: bài toán nghiệp vụ nhóm chọn - cảnh báo sớm sinh viên có nguy cơ Fail hoặc Withdrawn.
+- docs/requirements.md: bản nháp/ứng viên bài toán nghiệp vụ để nhóm tham khảo trước khi chốt phạm vi.
 - docs/oulad_raw_data.md: tổng quan bộ dữ liệu, danh sách file và lưu ý khi đọc dữ liệu.
 - docs/oulad_schema_relationships.md: ý nghĩa 7 bảng, từng cột và quan hệ khóa chính - khóa ngoại.
 - docs/paper/sdata2017171_mo_ta_vi.md: bản diễn giải tiếng Việt của bài báo OULAD.
