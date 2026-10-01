@@ -1,57 +1,57 @@
-"Công việc chính","Task con","Phân công"
-"Kiểm kê dữ liệu","Liệt kê toàn bộ file CSV trong raw_data",""
-"","Xác nhận đủ 7 bảng chính của OULAD",""
-"","Ghi nhận các file bị chia nhỏ như studentVle_0.csv đến studentVle_7.csv",""
-"","Kiểm tra số dòng và số cột của từng bảng",""
-"","Kiểm tra tên cột của từng bảng",""
-"","Tóm tắt vai trò của từng bảng trong dữ liệu",""
-"Load dữ liệu thô","Đọc từng file CSV bằng cấu hình thống nhất",""
-"","Giữ nguyên dữ liệu gốc trong raw_data",""
-"","Không chỉnh sửa trực tiếp file CSV gốc",""
-"","Xác định nơi lưu dữ liệu staging hoặc dữ liệu trung gian",""
-"","Ghi nhận lỗi đọc file nếu có",""
-"Gộp bảng bị chia nhỏ","Gộp studentVle_0.csv đến studentVle_7.csv thành một bảng logic studentVle",""
-"","Kiểm tra các file studentVle có cùng cấu trúc cột",""
-"","Kiểm tra tổng số dòng trước và sau khi gộp",""
-"","Kiểm tra duplicate sau khi gộp",""
-"","Lưu hoặc sinh bảng studentVle đã gộp cho bước EDA",""
-"Loại bỏ cột kỹ thuật dư thừa","Kiểm tra các cột index không tên như Unnamed: 0",""
-"","Loại bỏ cột index dư khỏi bảng dùng để phân tích",""
-"","Xác nhận cột bị loại bỏ không mang ý nghĩa nghiệp vụ",""
-"","Ghi lại quy tắc loại bỏ cột kỹ thuật",""
-"Chuẩn hóa kiểu dữ liệu","Chuyển id_student id_site id_assessment về kiểu phù hợp",""
-"","Xem code_module code_presentation assessment_type final_result là biến phân loại",""
-"","Xử lý các cột ngày tương đối như date date_submitted date_registration date_unregistration",""
-"","Chuyển score weight sum_click về kiểu số",""
-"","Kiểm tra lại kiểu dữ liệu sau khi gộp dữ liệu",""
-"Kiểm tra chất lượng dữ liệu","Thống kê missing value theo bảng và theo cột",""
-"","Kiểm tra duplicate theo khóa logic",""
-"","Kiểm tra giá trị bất thường của score weight sum_click",""
-"","Phân biệt missing hợp lệ với lỗi dữ liệu",""
-"","Ghi lại các vấn đề chất lượng dữ liệu phát hiện được",""
-"Kiểm tra quan hệ giữa các bảng","Kiểm tra studentInfo nối được với studentRegistration",""
-"","Kiểm tra studentAssessment nối được với assessments",""
-"","Kiểm tra studentVle nối được với vle",""
-"","Kiểm tra khóa ghép code_module code_presentation id_student",""
-"","Ghi nhận các dòng không khớp khóa nếu có",""
-"Tạo biến phục vụ EDA","Tính tổng số click VLE theo sinh viên",""
-"","Tính tổng số click theo tuần học hoặc mốc thời gian",""
-"","Tính số ngày sinh viên có hoạt động VLE",""
-"","Tính số loại tài nguyên VLE mà sinh viên đã tương tác",""
-"","Tính số bài đánh giá đã nộp",""
-"","Tính số bài nộp muộn nếu có đủ dữ liệu",""
-"","Tính điểm trung bình hoặc điểm có trọng số theo assessment",""
-"Tạo bảng EDA-ready","Tạo stg_courses",""
-"","Tạo stg_assessments",""
-"","Tạo stg_vle",""
-"","Tạo stg_student_info",""
-"","Tạo stg_student_registration",""
-"","Tạo stg_student_assessment",""
-"","Tạo stg_student_vle",""
-"","Tạo eda_student_summary",""
-"","Tạo eda_weekly_activity",""
-"","Tạo eda_assessment_progress",""
-"Tổng hợp đầu ra ELT nhẹ","Tạo bảng hoặc file dữ liệu đã sẵn sàng cho EDA",""
-"","Tạo ghi chú về quy tắc xử lý dữ liệu",""
-"","Tạo báo cáo ngắn về chất lượng dữ liệu",""
-"","Xác nhận dữ liệu gốc vẫn được giữ nguyên",""
+Công việc chính,Task con,Phân công
+Kiểm kê dữ liệu,Liệt kê toàn bộ file CSV trong raw_data,Người 1
+,Xác nhận đủ 7 bảng chính của OULAD,Người 1
+,Ghi nhận các file bị chia nhỏ như studentVle_0.csv đến studentVle_7.csv,Người 1
+,Kiểm tra số dòng và số cột của từng bảng,Người 1
+,Kiểm tra tên cột của từng bảng,Người 1
+,Tóm tắt vai trò của từng bảng trong dữ liệu,Người 1
+Load dữ liệu thô,Đọc từng file CSV bằng cấu hình thống nhất,Người 1
+,Giữ nguyên dữ liệu gốc trong raw_data,Người 1
+,Không chỉnh sửa trực tiếp file CSV gốc,Người 1
+,Xác định nơi lưu dữ liệu staging hoặc dữ liệu trung gian,Người 1
+,Ghi nhận lỗi đọc file nếu có,Người 1
+Gộp bảng bị chia nhỏ,Gộp studentVle_0.csv đến studentVle_7.csv thành một bảng logic studentVle,Người 1
+,Kiểm tra các file studentVle có cùng cấu trúc cột,Người 1
+,Kiểm tra tổng số dòng trước và sau khi gộp,Người 1
+,Kiểm tra duplicate sau khi gộp,Người 1
+,Lưu hoặc sinh bảng studentVle đã gộp cho bước EDA,Người 1
+Loại bỏ cột kỹ thuật dư thừa,Kiểm tra các cột index không tên như Unnamed: 0,Người 1
+,Loại bỏ cột index dư khỏi bảng dùng để phân tích,Người 1
+,Xác nhận cột bị loại bỏ không mang ý nghĩa nghiệp vụ,Người 1
+,Ghi lại quy tắc loại bỏ cột kỹ thuật,Người 1
+Chuẩn hóa kiểu dữ liệu,Chuyển id_student id_site id_assessment về kiểu phù hợp,Người 1
+,Xem code_module code_presentation assessment_type final_result là biến phân loại,Người 1
+,Xử lý các cột ngày tương đối như date date_submitted date_registration date_unregistration,Người 1
+,Chuyển score weight sum_click về kiểu số,Người 1
+,Kiểm tra lại kiểu dữ liệu sau khi gộp dữ liệu,Người 1
+Kiểm tra chất lượng dữ liệu,Thống kê missing value theo bảng và theo cột,Người 2
+,Kiểm tra duplicate theo khóa logic,Người 2
+,Kiểm tra giá trị bất thường của score weight sum_click,Người 2
+,Phân biệt missing hợp lệ với lỗi dữ liệu,Người 2
+,Ghi lại các vấn đề chất lượng dữ liệu phát hiện được,Người 2
+Kiểm tra quan hệ giữa các bảng,Kiểm tra studentInfo nối được với studentRegistration,Người 2
+,Kiểm tra studentAssessment nối được với assessments,Người 2
+,Kiểm tra studentVle nối được với vle,Người 2
+,Kiểm tra khóa ghép code_module code_presentation id_student,Người 2
+,Ghi nhận các dòng không khớp khóa nếu có,Người 2
+Tạo biến phục vụ EDA,Tính tổng số click VLE theo sinh viên,Người 2
+,Tính tổng số click theo tuần học hoặc mốc thời gian,Người 2
+,Tính số ngày sinh viên có hoạt động VLE,Người 2
+,Tính số loại tài nguyên VLE mà sinh viên đã tương tác,Người 2
+,Tính số bài đánh giá đã nộp,Người 2
+,Tính số bài nộp muộn nếu có đủ dữ liệu,Người 2
+,Tính điểm trung bình hoặc điểm có trọng số theo assessment,Người 2
+Tạo bảng EDA-ready,Tạo stg_courses,Người 1
+,Tạo stg_assessments,Người 1
+,Tạo stg_vle,Người 1
+,Tạo stg_student_info,Người 1
+,Tạo stg_student_registration,Người 2
+,Tạo stg_student_assessment,Người 2
+,Tạo stg_student_vle,Người 2
+,Tạo eda_student_summary,Người 2
+,Tạo eda_weekly_activity,Người 2
+,Tạo eda_assessment_progress,Người 2
+Tổng hợp đầu ra ELT nhẹ,Tạo bảng hoặc file dữ liệu đã sẵn sàng cho EDA,Cả hai
+,Tạo ghi chú về quy tắc xử lý dữ liệu,Người 2
+,Tạo báo cáo ngắn về chất lượng dữ liệu,Người 2
+,Xác nhận dữ liệu gốc vẫn được giữ nguyên,Cả hai
