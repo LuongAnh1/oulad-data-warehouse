@@ -243,3 +243,116 @@ Sau khi hoàn thành EDA, nhóm nên có:
 8. Trực quan hóa các phát hiện chính.
 9. Tổng hợp insight và vấn đề dữ liệu.
 10. Đề xuất biến hoặc hướng phân tích tiếp theo.
+
+## 6. Phần đã thực hiện
+
+### 6.0. Luồng đọc khuyến nghị
+
+Nếu chỉ cần nắm kết quả chính:
+
+1. Đọc `EDA/README.md` để hiểu phạm vi và nguyên tắc EDA.
+2. Đọc file `*_report.md` của từng phần để nắm tóm tắt, dữ liệu đầu vào, bảng và biểu đồ đã sinh.
+3. Đọc file `*_insights.md` của từng phần để hiểu biểu đồ nói gì, vì sao đáng chú ý và nên dùng kết quả đó thế nào.
+4. Mở thư mục `EDA/outputs/figures/` khi cần xem hình minh chứng.
+5. Mở thư mục `EDA/outputs/tables/` khi cần kiểm tra số liệu chi tiết.
+
+Nếu thời gian ít, đọc trọng tâm theo thứ tự:
+
+- [02_distribution_insights.md](docs/02-distribution/02_distribution_insights.md)
+- [03_missing_values_insights.md](docs/03-missing-values/03_missing_values_insights.md)
+- [04_outliers_insights.md](docs/04-outliers/04_outliers_insights.md)
+
+Các notebook trong `EDA/notebooks/` dùng để chạy lại và xem kết quả tương tác. Các script trong `EDA/src/` là nguồn tạo lại bảng, biểu đồ, report và insight.
+
+### 6.1. Phân bố dữ liệu
+
+Script chính:
+
+```powershell
+python EDA\src\02_analyze_distributions.py
+```
+
+Notebook:
+
+- `EDA/notebooks/02_distribution_eda.ipynb`
+
+Đầu vào chính:
+
+- `ETL/eda_data/eda_student_summary.csv`
+- `ETL/eda_data/eda_weekly_activity.csv`
+- `ETL/eda_data/eda_assessment_progress.csv`
+- `ETL/staging_data/assessments.csv`
+- `ETL/staging_data/vle.csv`
+- `ETL/staging_data/studentVle.csv`
+
+Đầu ra:
+
+- Report: `EDA/docs/02-distribution/02_distribution_report.md`
+- Insights: [02_distribution_insights.md](docs/02-distribution/02_distribution_insights.md)
+- Checklist: `EDA/docs/02-distribution/02_distribution_checklist.md`
+- Bảng thống kê: `EDA/outputs/tables/02_distribution/`
+- Biểu đồ: `EDA/outputs/figures/02_distribution/`
+
+Ghi chú: các biểu đồ click dùng `log1p` để giảm ảnh hưởng của phân bố lệch phải.
+Phần này cũng đã bổ sung boxplot, ECDF, heatmap và bubble chart để tránh phụ thuộc quá nhiều vào bar chart.
+
+### 6.2. Phát hiện dữ liệu khuyết
+
+Script chính:
+
+```powershell
+python EDA\src\03_detect_missing_values.py
+```
+
+Notebook:
+
+- `EDA/notebooks/03_missing_values_eda.ipynb`
+
+Đầu vào chính:
+
+- `ETL/staging_data/*.csv`
+- `ETL/eda_data/eda_student_summary.csv`
+- `ETL/eda_data/eda_weekly_activity.csv`
+- `ETL/eda_data/eda_assessment_progress.csv`
+
+Đầu ra:
+
+- Report: `EDA/docs/03-missing-values/03_missing_values_report.md`
+- Insights: [03_missing_values_insights.md](docs/03-missing-values/03_missing_values_insights.md)
+- Checklist: `EDA/docs/03-missing-values/03_missing_values_checklist.md`
+- Bảng thống kê: `EDA/outputs/tables/03_missing_values/`
+- Biểu đồ: `EDA/outputs/figures/03_missing_values/`
+
+Ghi chú: phần này phân biệt missing hợp lệ theo nghiệp vụ, ví dụ `date_unregistration`, với missing cần xử lý rõ khi phân tích, ví dụ `score`, `imd_band`, `avg_score`, `weighted_score`.
+Heatmap missing matrix được dùng để nhìn nhanh cột nào thiếu ở bảng nào.
+
+### 6.3. Phát hiện dữ liệu ngoại lệ
+
+Script chính:
+
+```powershell
+python EDA\src\04_detect_outliers.py
+```
+
+Notebook:
+
+- `EDA/notebooks/04_outliers_eda.ipynb`
+
+Đầu vào chính:
+
+- `ETL/eda_data/eda_student_summary.csv`
+- `ETL/eda_data/eda_weekly_activity.csv`
+- `ETL/eda_data/eda_assessment_progress.csv`
+- `ETL/staging_data/assessments.csv`
+- `ETL/staging_data/studentVle.csv`
+
+Đầu ra:
+
+- Report: `EDA/docs/04-outliers/04_outliers_report.md`
+- Insights: [04_outliers_insights.md](docs/04-outliers/04_outliers_insights.md)
+- Checklist: `EDA/docs/04-outliers/04_outliers_checklist.md`
+- Bảng thống kê: `EDA/outputs/tables/04_outliers/`
+- Biểu đồ: `EDA/outputs/figures/04_outliers/`
+
+Ghi chú: phần này chỉ phát hiện và gắn cờ ngoại lệ. Không xóa outlier tự động vì với OULAD, tương tác VLE rất cao hoặc nộp bài rất sớm/muộn có thể là hành vi học tập thật.
+Heatmap và scatter plot được dùng để so sánh tín hiệu ngoại lệ giữa các module-presentation rõ hơn so với chỉ dùng biểu đồ cột.
