@@ -1,0 +1,2 @@
+metric,count,missing,zero_count,negative_count,min,p01,p05,p25,median,mean,p75,p95,p99,max,std
+assessment_weight,206,0,56,0,0.0,0.0,0.0,0.0,12.5,20.87378640776699,24.25,100.0,100.0,100.0,30.384223959041318

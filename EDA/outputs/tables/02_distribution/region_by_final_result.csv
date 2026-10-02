@@ -1,0 +1,53 @@
+region,final_result,count,pct_within_group
+East Anglian Region,Distinction,327,0.09790419161676647
+East Anglian Region,Fail,698,0.2089820359281437
+East Anglian Region,Pass,1309,0.39191616766467063
+East Anglian Region,Withdrawn,1006,0.3011976047904192
+East Midlands Region,Distinction,200,0.08456659619450317
+East Midlands Region,Fail,462,0.19534883720930232
+East Midlands Region,Pass,881,0.37251585623678646
+East Midlands Region,Withdrawn,822,0.347568710359408
+Ireland,Distinction,98,0.08277027027027027
+Ireland,Fail,261,0.2204391891891892
+Ireland,Pass,552,0.46621621621621623
+Ireland,Withdrawn,273,0.23057432432432431
+London Region,Distinction,263,0.08177860696517412
+London Region,Fail,744,0.23134328358208955
+London Region,Pass,1099,0.34172885572139305
+London Region,Withdrawn,1110,0.3451492537313433
+North Region,Distinction,230,0.12616566099835436
+North Region,Fail,327,0.1793746571585299
+North Region,Pass,691,0.37904552934722985
+North Region,Withdrawn,575,0.3154141524958859
+North Western Region,Distinction,213,0.07329662766689608
+North Western Region,Fail,704,0.24225739848589126
+North Western Region,Pass,955,0.3286304198210599
+North Western Region,Withdrawn,1034,0.3558155540261528
+Scotland,Distinction,328,0.09518282066163668
+Scotland,Fail,852,0.24724318049912944
+Scotland,Pass,1359,0.3943702843876959
+Scotland,Withdrawn,907,0.263203714451538
+South East Region,Distinction,244,0.11558503079109426
+South East Region,Fail,375,0.17764092846991947
+South East Region,Pass,843,0.39933680720037895
+South East Region,Withdrawn,649,0.3074372335386073
+South Region,Distinction,333,0.10769728331177232
+South Region,Fail,544,0.1759379042690815
+South Region,Pass,1287,0.41623544631306597
+South Region,Withdrawn,928,0.3001293661060802
+South West Region,Distinction,264,0.10837438423645321
+South West Region,Fail,465,0.19088669950738915
+South West Region,Pass,949,0.38957307060755336
+South West Region,Withdrawn,758,0.3111658456486043
+Wales,Distinction,177,0.08485139022051774
+Wales,Fail,620,0.2972195589645254
+Wales,Pass,765,0.3667305848513902
+Wales,Withdrawn,524,0.25119846596356665
+West Midlands Region,Distinction,182,0.0704879938032533
+West Midlands Region,Fail,551,0.2134004647560031
+West Midlands Region,Pass,936,0.3625096824167312
+West Midlands Region,Withdrawn,913,0.35360185902401237
+Yorkshire Region,Distinction,165,0.08225324027916252
+Yorkshire Region,Fail,449,0.2238285144566301
+Yorkshire Region,Pass,735,0.3664007976071785
+Yorkshire Region,Withdrawn,657,0.3275174476570289

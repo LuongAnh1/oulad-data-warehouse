@@ -1,0 +1,4 @@
+assessment_type,submission_count,scored_count,mean_score,median_score,p25_score,p75_score
+TMA,98426,98253,72.5633924663878,76.0,63.0,86.0
+CMA,70527,70527,81.02705346888426,82.0,72.0,98.0
+Exam,4959,4959,65.57289776164549,67.0,51.0,82.0

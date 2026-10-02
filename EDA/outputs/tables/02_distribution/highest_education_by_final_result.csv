@@ -1,0 +1,21 @@
+highest_education,final_result,count,pct_within_group
+A Level or Equivalent,Distinction,1496,0.10651477394090424
+A Level or Equivalent,Fail,2707,0.1927376290494838
+A Level or Equivalent,Pass,5812,0.413812744749021
+A Level or Equivalent,Withdrawn,4030,0.28693485226059096
+HE Qualification,Distinction,697,0.14735729386892177
+HE Qualification,Fail,790,0.16701902748414377
+HE Qualification,Pass,1960,0.4143763213530655
+HE Qualification,Withdrawn,1283,0.2712473572938689
+Lower Than A Level,Distinction,727,0.0552515579875361
+Lower Than A Level,Fail,3426,0.2603739170086639
+Lower Than A Level,Pass,4385,0.33325733394132845
+Lower Than A Level,Withdrawn,4620,0.3511171910624715
+No Formal quals,Distinction,16,0.04610951008645533
+No Formal quals,Fail,95,0.2737752161383285
+No Formal quals,Pass,87,0.2507204610951009
+No Formal quals,Withdrawn,149,0.42939481268011526
+Post Graduate Qualification,Distinction,88,0.28115015974440893
+Post Graduate Qualification,Fail,34,0.10862619808306709
+Post Graduate Qualification,Pass,117,0.3738019169329074
+Post Graduate Qualification,Withdrawn,74,0.2364217252396166

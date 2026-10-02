@@ -1,0 +1,2 @@
+metric,count,missing,zero_count,negative_count,min,p01,p05,p25,median,mean,p75,p95,p99,max,std
+student_total_click,32593,0,3365,0,0.0,0.0,0.0,134.0,575.0,1176.4201822477219,1527.0,4436.399999999998,7571.719999999983,23513.0,1649.137940728935
