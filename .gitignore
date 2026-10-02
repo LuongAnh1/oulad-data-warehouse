@@ -17,3 +17,6 @@ __pycache__/
 *.log
 tmp/
 temp/
+
+# Generated ELT/EDA outputs
+ETL/eda_data/*.csv
