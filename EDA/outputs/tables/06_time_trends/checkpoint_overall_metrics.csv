@@ -1,0 +1,5 @@
+checkpoint_day,checkpoint_week,student_count,active_student_count,active_student_pct,median_cumulative_click,p75_cumulative_click,median_cumulative_active_weeks,median_cumulative_active_days
+14,2,32593,28567,0.8764765440431994,141.0,328.0,4.0,8.0
+28,4,32593,28900,0.8866934617862732,196.0,453.0,6.0,12.0
+42,6,32593,29036,0.8908661369005615,237.0,548.0,7.0,16.0
+56,8,32593,29119,0.8934126959776639,273.0,633.0,9.0,18.0

@@ -261,6 +261,8 @@ Nếu thời gian ít, đọc trọng tâm theo thứ tự:
 - [02_distribution_insights.md](docs/02-distribution/02_distribution_insights.md)
 - [03_missing_values_insights.md](docs/03-missing-values/03_missing_values_insights.md)
 - [04_outliers_insights.md](docs/04-outliers/04_outliers_insights.md)
+- [05_correlation_insights.md](docs/05-correlation/05_correlation_insights.md)
+- [06_time_trends_insights.md](docs/06-time-trends/06_time_trends_insights.md)
 
 Các notebook trong `EDA/notebooks/` dùng để chạy lại và xem kết quả tương tác. Các script trong `EDA/src/` là nguồn tạo lại bảng, biểu đồ, report và insight.
 
@@ -356,3 +358,61 @@ Notebook:
 
 Ghi chú: phần này chỉ phát hiện và gắn cờ ngoại lệ. Không xóa outlier tự động vì với OULAD, tương tác VLE rất cao hoặc nộp bài rất sớm/muộn có thể là hành vi học tập thật.
 Heatmap và scatter plot được dùng để so sánh tín hiệu ngoại lệ giữa các module-presentation rõ hơn so với chỉ dùng biểu đồ cột.
+
+### 6.4. Phân tích tương quan
+
+Script chính:
+
+```powershell
+python EDA\src\05_analyze_correlations.py
+```
+
+Notebook:
+
+- `EDA/notebooks/05_correlation_eda.ipynb`
+
+Đầu vào chính:
+
+- `ETL/eda_data/eda_student_summary.csv`
+- `ETL/eda_data/eda_weekly_activity.csv`
+- `ETL/eda_data/eda_assessment_progress.csv`
+
+Đầu ra:
+
+- Report: `EDA/docs/05-correlation/05_correlation_report.md`
+- Insights: [05_correlation_insights.md](docs/05-correlation/05_correlation_insights.md)
+- Checklist: `EDA/docs/05-correlation/05_correlation_checklist.md`
+- Bảng thống kê: `EDA/outputs/tables/05_correlation/`
+- Biểu đồ: `EDA/outputs/figures/05_correlation/`
+
+Ghi chú: phần này tách rõ tương quan biến số với biến số và quan hệ giữa biến số với `final_result`. `final_result` là biến phân loại nên không bị ép vào correlation matrix chính; thay vào đó dùng boxplot, stacked bar và bảng tóm tắt theo nhóm.
+Các biến gần kết quả cuối như `weighted_score` và assessment sau checkpoint có nguy cơ leakage nếu sau này nhóm chọn bài toán dự báo sớm.
+
+### 6.5. Phân tích mẫu và xu hướng theo thời gian
+
+Script chính:
+
+```powershell
+python EDA\src\06_analyze_time_trends.py
+```
+
+Notebook:
+
+- `EDA/notebooks/06_time_trends_eda.ipynb`
+
+Đầu vào chính:
+
+- `ETL/eda_data/eda_student_summary.csv`
+- `ETL/eda_data/eda_weekly_activity.csv`
+- `ETL/eda_data/eda_assessment_progress.csv`
+- `ETL/staging_data/studentRegistration.csv`
+
+Đầu ra:
+
+- Report: `EDA/docs/06-time-trends/06_time_trends_report.md`
+- Insights: [06_time_trends_insights.md](docs/06-time-trends/06_time_trends_insights.md)
+- Checklist: `EDA/docs/06-time-trends/06_time_trends_checklist.md`
+- Bảng thống kê: `EDA/outputs/tables/06_time_trends/`
+- Biểu đồ: `EDA/outputs/figures/06_time_trends/`
+
+Ghi chú: phần này dùng `study_week` và các ngày tương đối của OULAD, không phải ngày lịch thật. Các checkpoint 14, 28, 42 và 56 chỉ dùng dữ liệu đến checkpoint để ghi nhớ nguyên tắc không dùng dữ liệu tương lai nếu sau này nhóm chọn bài toán cảnh báo sớm.

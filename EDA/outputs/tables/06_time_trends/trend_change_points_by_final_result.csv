@@ -1,0 +1,5 @@
+final_result,start_week,peak_week,peak_click_per_active_student_smooth,first_week_below_80pct_of_peak_after_peak,click_per_active_student_at_decline_week,end_week,end_click_per_active_student,start_active_student_count,peak_active_student_count,end_active_student_count,end_active_student_pct_of_peak
+Distinction,0,0,126.90421455938697,5,95.94704373638763,38,5.086848635235732,2610,2610,403,0.15440613026819924
+Pass,0,2,94.37065955160192,5,74.5627051118506,38,4.935873605947956,10295,10674,1076,0.10080569608394228
+Fail,0,33,70.49585604270679,35,46.46830247066155,38,4.382716049382716,4877,992,81,0.08165322580645161
+Withdrawn,0,2,74.21397830664533,5,54.47528296554437,37,57.0,4865,4539,1,0.0002203128442388191

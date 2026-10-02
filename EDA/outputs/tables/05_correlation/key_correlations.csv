@@ -1,0 +1,16 @@
+segment,x_metric,x_label,y_metric,y_label,n,pearson_corr,spearman_corr,relationship
+overall,total_click,Total click,avg_score,Average score,25820,0.29034450713513904,0.3473962152147744,total click vs average score
+overall,log_total_click,Log1p total click,avg_score,Average score,25820,0.3543500450772902,0.3473962152147744,log total click vs average score
+overall,total_click,Total click,weighted_score,Weighted score,23506,0.3177089214591744,0.388210884126111,total click vs weighted score
+overall,log_total_click,Log1p total click,weighted_score,Weighted score,23506,0.3644520143236388,0.388210884126111,log total click vs weighted score
+overall,active_days,Active days,weighted_score,Weighted score,23506,0.3596425913372851,0.3778341540680238,active days vs weighted score
+overall,active_weeks,Active weeks,weighted_score,Weighted score,23506,0.3613644316400972,0.3609732045060459,active weeks vs weighted score
+overall,interacted_sites,Interacted sites,weighted_score,Weighted score,23506,0.2703649518966805,0.2728265145813907,interacted sites vs weighted score
+overall,resource_types_used,Resource types,weighted_score,Weighted score,23506,0.26782383804089765,0.25944943709755336,resource types vs weighted score
+overall,submitted_assessments,Submitted assessments,weighted_score,Weighted score,23506,0.22895972049326072,0.19947439123815427,submitted assessments vs weighted score
+overall,submitted_weight_sum,Submitted weight,weighted_score,Weighted score,23506,0.16613337083776442,0.19106860900739073,submitted weight vs weighted score
+overall,late_submissions,Late submissions,weighted_score,Weighted score,23506,-0.0625251975500528,-0.13466124369077379,late submissions vs weighted score
+overall,late_submission_rate,Late submission rate,weighted_score,Weighted score,23506,-0.2673928181422484,-0.24029233077726497,late submission rate vs weighted score
+overall,log_total_click,Log1p total click,success_flag,Pass/Distinction flag,32593,0.585957683929138,0.6459104261298801,log total click vs pass/distinction flag
+overall,active_days,Active days,success_flag,Pass/Distinction flag,32593,0.625963962719871,0.6901795601253569,active days vs pass/distinction flag
+overall,late_submission_rate,Late submission rate,success_flag,Pass/Distinction flag,25843,-0.2154557059433249,-0.16213820275217958,late submission rate vs pass/distinction flag

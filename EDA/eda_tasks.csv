@@ -27,19 +27,19 @@ Phát hiện dữ liệu ngoại lệ,Kiểm tra score ngoài khoảng hợp lý
 ,Kiểm tra sinh viên có tương tác VLE rất cao hoặc rất thấp,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
 ,Kiểm tra assessment có weight bất thường,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
 ,So sánh outlier theo từng module-presentation,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
-Phân tích tương quan,Tính tương quan giữa tổng sum_click và score,,,
-,So sánh mức độ tương tác VLE giữa các nhóm final_result,,,
-,So sánh điểm assessment giữa các nhóm kết quả cuối,,,
-,Phân tích quan hệ giữa số ngày hoạt động VLE và kết quả cuối,,,
-,Phân tích quan hệ giữa nộp muộn assessment và kết quả cuối,,,
-,Kiểm tra tương quan riêng theo từng module-presentation,,,
-Phân tích mẫu và xu hướng theo thời gian,Tổng hợp sum_click theo tuần học,,,
-,Theo dõi số sinh viên còn hoạt động qua từng tuần,,,
-,Phân tích xu hướng tương tác trước các mốc assessment,,,
-,So sánh xu hướng VLE giữa các nhóm kết quả cuối,,,
-,Phát hiện giai đoạn sinh viên bắt đầu giảm tương tác,,,
-,Phân tích tỷ lệ hủy đăng ký theo thời gian,,,
-,Tạo checkpoint theo ngày 14 28 42 56 nếu cần cho phân tích sau,,,
+Phân tích tương quan,Tính tương quan giữa tổng sum_click và score,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,So sánh mức độ tương tác VLE giữa các nhóm final_result,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,So sánh điểm assessment giữa các nhóm kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Phân tích quan hệ giữa số ngày hoạt động VLE và kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Phân tích quan hệ giữa nộp muộn assessment và kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Kiểm tra tương quan riêng theo từng module-presentation,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+Phân tích mẫu và xu hướng theo thời gian,Tổng hợp sum_click theo tuần học,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Theo dõi số sinh viên còn hoạt động qua từng tuần,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phân tích xu hướng tương tác trước các mốc assessment,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,So sánh xu hướng VLE giữa các nhóm kết quả cuối,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phát hiện giai đoạn sinh viên bắt đầu giảm tương tác,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phân tích tỷ lệ hủy đăng ký theo thời gian,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Tạo checkpoint theo ngày 14 28 42 56 nếu cần cho phân tích sau,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
 Chuẩn hóa kiểu dữ liệu phục vụ EDA,Kiểm tra kiểu dữ liệu sau khi đọc CSV,,,
 ,Chuyển các cột ID về kiểu phù hợp,,,
 ,Xác định các biến phân loại như code_module code_presentation assessment_type activity_type final_result,,,
