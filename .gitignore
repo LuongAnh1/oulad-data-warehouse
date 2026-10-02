@@ -1,0 +1,19 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local configuration
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

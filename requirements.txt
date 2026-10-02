@@ -1,0 +1,4 @@
+# Python 3.12 is recommended for this project.
+pandas>=2.2,<3.0
+ipykernel>=6.29,<7.0
+jupyterlab>=4.2,<5.0

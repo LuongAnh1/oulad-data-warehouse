@@ -21,6 +21,19 @@ OULAD gồm 7 bảng chính: courses, assessments, vle, studentInfo, studentRegi
 
 Trong repo này, studentVle được chia thành studentVle_0.csv đến studentVle_7.csv. Các file này có thêm một cột index không tên ở đầu file; khi đọc bằng pandas có thể dùng index_col=0 hoặc bỏ cột này trước khi phân tích.
 
+## Thiết lập môi trường Python
+
+Nên dùng môi trường riêng cho các bước ETL/ELT để tránh lệch phiên bản thư viện giữa các máy.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Nếu chạy notebook trong VS Code/Jupyter, chọn kernel từ môi trường `.venv` vừa tạo.
+
 ## Lưu ý khi pull dữ liệu lớn bằng Git LFS
 
 Repo có một số file dữ liệu staging lớn được quản lý bằng Git LFS, đặc biệt là `ETL/staging_data/studentVle.csv`. Để tránh `git pull` tự tải file lớn và bị chậm/kẹt, mỗi thành viên nên cấu hình Git LFS theo chế độ chỉ tải dữ liệu khi cần:
