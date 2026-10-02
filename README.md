@@ -21,6 +21,34 @@ OULAD gồm 7 bảng chính: courses, assessments, vle, studentInfo, studentRegi
 
 Trong repo này, studentVle được chia thành studentVle_0.csv đến studentVle_7.csv. Các file này có thêm một cột index không tên ở đầu file; khi đọc bằng pandas có thể dùng index_col=0 hoặc bỏ cột này trước khi phân tích.
 
+## Lưu ý khi pull dữ liệu lớn bằng Git LFS
+
+Repo có một số file dữ liệu staging lớn được quản lý bằng Git LFS, đặc biệt là `ETL/staging_data/studentVle.csv`. Để tránh `git pull` tự tải file lớn và bị chậm/kẹt, mỗi thành viên nên cấu hình Git LFS theo chế độ chỉ tải dữ liệu khi cần:
+
+```powershell
+git lfs install --skip-smudge
+```
+
+Sau đó có thể pull code và tài liệu như bình thường:
+
+```powershell
+git pull
+```
+
+Khi cần tải dữ liệu thật từ Git LFS, chạy:
+
+```powershell
+git lfs pull
+```
+
+Hoặc chỉ tải riêng một file lớn:
+
+```powershell
+git lfs pull --include="ETL/staging_data/studentVle.csv"
+```
+
+Nếu chưa chạy `git lfs pull`, các file trong `ETL/staging_data/*.csv` có thể chỉ là file pointer rất nhỏ của Git LFS, chưa phải dữ liệu CSV thật. Xem hướng dẫn chi tiết tại `GUILINE-GIT-LFS.md`.
+
 ## Nguồn tham khảo
 
 - Kaggle: https://www.kaggle.com/datasets/rocki37/open-university-learning-analytics-dataset/
