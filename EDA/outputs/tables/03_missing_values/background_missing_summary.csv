@@ -1,0 +1,7 @@
+column_name,row_count,missing_count,missing_pct,suggested_action
+imd_band,32593,1111,0.03408707391157611,Tạo nhóm Unknown/flag riêng nếu dùng làm biến phân tích.
+gender,32593,0,0.0,Không cần xử lý missing.
+region,32593,0,0.0,Không cần xử lý missing.
+highest_education,32593,0,0.0,Không cần xử lý missing.
+age_band,32593,0,0.0,Không cần xử lý missing.
+disability,32593,0,0.0,Không cần xử lý missing.

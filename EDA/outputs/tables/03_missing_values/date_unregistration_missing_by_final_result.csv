@@ -1,0 +1,5 @@
+final_result,row_count,missing_count,missing_pct,classification
+Distinction,3024,3024,1.0,Có thể hợp lệ vì sinh viên hoàn thành môn học.
+Pass,12361,12361,1.0,Có thể hợp lệ vì sinh viên hoàn thành môn học.
+Fail,7052,7043,0.9987237663074305,Có thể hợp lệ nếu sinh viên không hủy đăng ký.
+Withdrawn,10156,93,0.009157148483654983,Cần kiểm tra nếu thiếu vì sinh viên đã hủy đăng ký thường có ngày hủy.

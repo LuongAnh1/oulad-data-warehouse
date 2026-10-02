@@ -1,0 +1,10 @@
+source_table,column_name,missing_count,missing_pct,classification,suggested_action,attention_level
+stg_student_assessment / eda_assessment_progress,date_submitted,0,0.0,Không thấy missing trong các dòng submission quan sát được.,Không dùng missing date_submitted để suy ra chưa nộp; cần so với danh sách assessment bắt buộc nếu phân tích non-submission.,low
+stg_vle,week_from,5243,0.823852922690132,Missing metadata cần ghi chú.,Giữ nguyên ở EDA; kiểm tra lại nếu dùng cột này làm mốc thời gian.,medium
+stg_vle,week_to,5243,0.823852922690132,Missing metadata cần ghi chú.,Giữ nguyên ở EDA; kiểm tra lại nếu dùng cột này làm mốc thời gian.,medium
+stg_student_registration,date_unregistration,22521,0.6909765900653515,Missing hợp lệ theo nghiệp vụ ở phần lớn trường hợp.,Diễn giải là không hủy đăng ký; kiểm tra riêng các dòng Withdrawn bị thiếu ngày hủy.,medium
+eda_student_summary,weighted_score,9087,0.27880219679072193,Missing phát sinh khi không có trọng số điểm đã nộp.,Không thay bằng 0 nếu 0 có nghĩa điểm thật; dùng flag hoặc phân nhóm no_submission.,medium
+eda_student_summary,avg_score,6773,0.2078053569784923,Missing phát sinh từ việc không có điểm assessment để tính trung bình.,Giữ NaN và dùng kèm submitted_assessments/submitted_records khi phân tích.,medium
+stg_assessments,date,11,0.05339805825242718,Missing metadata cần ghi chú.,Giữ nguyên ở EDA; kiểm tra lại nếu dùng cột này làm mốc thời gian.,medium
+stg_student_info,imd_band,1111,0.03408707391157611,Missing biến nền cần xử lý rõ ràng.,Giữ nhóm Unknown hoặc tạo flag is_missing_imd_band khi dùng trong phân tích/model.,medium
+eda_assessment_progress,score,173,0.0009947559685358112,Missing cần ghi chú khi phân tích điểm.,Tạo flag is_missing_score; không xóa tự động vì có thể liên quan tới bài chưa chấm hoặc bản ghi banked.,medium

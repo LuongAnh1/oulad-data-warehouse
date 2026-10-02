@@ -1,0 +1,3 @@
+table_name,row_count,missing_count,missing_pct,note
+stg_student_assessment,173912,0,0.0,Không có missing trong các dòng submission quan sát được.
+eda_assessment_progress,173912,0,0.0,Không có missing trong các dòng submission quan sát được.
