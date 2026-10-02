@@ -1,0 +1,2 @@
+rule,row_count,outlier_count,outlier_pct,below_0_count,above_100_count,min_score,max_score
+score_outside_0_100,173912,0,0.0,0,0,0.0,100.0

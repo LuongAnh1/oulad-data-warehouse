@@ -1,0 +1,2 @@
+rule,row_count,missing_due_date_count,very_early_threshold_days,very_early_count,very_early_pct,very_late_threshold_days,very_late_count,very_late_pct,min_days_from_due,median_days_from_due,max_days_from_due
+submission_timing,173912,2865,-60,18037,0.10371337228023368,30,471,0.0027082662495974976,-246.0,-1.0,372.0

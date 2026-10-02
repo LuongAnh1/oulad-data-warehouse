@@ -1,0 +1,2 @@
+rule,assessment_count,missing_weight_count,zero_weight_count,below_0_count,above_100_count,non_exam_weight_not_100_count,exam_weight_not_100_count,min_weight,median_weight,max_weight
+assessment_weight,206,0,56,0,0,3,2,0.0,12.5,100.0
