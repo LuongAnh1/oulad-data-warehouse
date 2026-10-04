@@ -1,0 +1,68 @@
+Công việc chính,Task con,Phân công,Trạng thái,Minh chứng
+Tổng quan dữ liệu,Liệt kê 7 bảng chính của OULAD,,,
+,Thống kê số dòng và số cột của từng bảng,,,
+,Kiểm tra tên cột và kiểu dữ liệu ban đầu,,,
+,Xác định khóa logic và các cặp bảng có thể join,,,
+,Kiểm tra số lượng code_module code_presentation id_student id_assessment id_site,,,
+,Tóm tắt vai trò từng bảng trong phân tích,,,
+Phân bố dữ liệu,Phân tích phân bố final_result,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố sinh viên theo code_module,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố sinh viên theo code_presentation,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố điểm score,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố weight của assessment,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố sum_click,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố activity_type,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,Phân tích phân bố gender region highest_education imd_band age_band disability,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+,So sánh phân bố giữa các module-presentation,,Hoàn thành,EDA/docs/02-distribution/02_distribution_report.md; EDA/src/02_analyze_distributions.py
+Phát hiện dữ liệu khuyết,Thống kê số lượng missing value theo từng cột,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Tính tỷ lệ missing value theo từng bảng,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Kiểm tra date_unregistration bị thiếu,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Kiểm tra score bị thiếu,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Kiểm tra date_submitted bị thiếu,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Kiểm tra missing value trong các biến nền như imd_band,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+,Phân loại missing value hợp lệ và missing cần xử lý,,Hoàn thành,EDA/docs/03-missing-values/03_missing_values_report.md; EDA/src/03_detect_missing_values.py
+Phát hiện dữ liệu ngoại lệ,Kiểm tra score ngoài khoảng hợp lý,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+,Kiểm tra sum_click bằng 0 quá cao hoặc âm,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+,Kiểm tra date_submitted quá sớm hoặc quá muộn so với hạn date,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+,Kiểm tra sinh viên có tương tác VLE rất cao hoặc rất thấp,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+,Kiểm tra assessment có weight bất thường,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+,So sánh outlier theo từng module-presentation,,Hoàn thành,EDA/docs/04-outliers/04_outliers_report.md; EDA/src/04_detect_outliers.py
+Phân tích tương quan,Tính tương quan giữa tổng sum_click và score,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,So sánh mức độ tương tác VLE giữa các nhóm final_result,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,So sánh điểm assessment giữa các nhóm kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Phân tích quan hệ giữa số ngày hoạt động VLE và kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Phân tích quan hệ giữa nộp muộn assessment và kết quả cuối,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+,Kiểm tra tương quan riêng theo từng module-presentation,,Hoàn thành,EDA/docs/05-correlation/05_correlation_report.md; EDA/src/05_analyze_correlations.py
+Phân tích mẫu và xu hướng theo thời gian,Tổng hợp sum_click theo tuần học,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Theo dõi số sinh viên còn hoạt động qua từng tuần,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phân tích xu hướng tương tác trước các mốc assessment,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,So sánh xu hướng VLE giữa các nhóm kết quả cuối,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phát hiện giai đoạn sinh viên bắt đầu giảm tương tác,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Phân tích tỷ lệ hủy đăng ký theo thời gian,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+,Tạo checkpoint theo ngày 14 28 42 56 nếu cần cho phân tích sau,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
+Chuẩn hóa kiểu dữ liệu phục vụ EDA,Kiểm tra kiểu dữ liệu sau khi đọc CSV,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Chuyển các cột ID về kiểu phù hợp,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Xác định các biến phân loại như code_module code_presentation assessment_type activity_type final_result,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Xử lý các cột ngày tương đối như số nguyên,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Chuyển score weight sum_click về kiểu số,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Kiểm tra lại kiểu dữ liệu sau khi gộp studentVle,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+Trực quan hóa dữ liệu,Vẽ biểu đồ phân bố final_result,,Hoàn thành,EDA/outputs/figures/08_visualization/1_final_result_distribution.png
+,Vẽ biểu đồ phân bố điểm assessment,,Hoàn thành,EDA/outputs/figures/08_visualization/2_avg_score_distribution.png
+,Vẽ biểu đồ tổng click VLE,,Hoàn thành,EDA/outputs/figures/08_visualization/3_total_click_distribution.png
+,Vẽ biểu đồ tương tác theo tuần học,,Hoàn thành,EDA/outputs/figures/08_visualization/4_weekly_interaction_by_result.png
+,Vẽ biểu đồ so sánh các nhóm kết quả cuối,,Hoàn thành,EDA/outputs/figures/08_visualization/5_total_click_by_final_result.png
+,Vẽ biểu đồ missing value nếu cần,,Hoàn thành,EDA/outputs/figures/08_visualization/6_missing_value_chart.png
+,Vẽ heatmap hoặc biểu đồ tương quan nếu phù hợp,,Hoàn thành,EDA/outputs/figures/08_visualization/7_correlation_heatmap.png
+,Tạo nhóm biểu đồ tổng hợp cho module-presentation,,Hoàn thành,EDA/outputs/figures/08_visualization/8_dashboard_module_presentation.png
+Nâng chất lượng dữ liệu,Ghi lại các vấn đề dữ liệu phát hiện được,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Kiểm tra duplicate theo khóa logic,,Hoàn thành,EDA/outputs/tables/09_data_quality/data_quality_issues.csv
+,Kiểm tra khóa ngoại không khớp giữa các bảng,,Hoàn thành,EDA/outputs/tables/09_data_quality/data_quality_issues.csv
+,Ghi lại quy tắc xử lý missing value,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Ghi lại quy tắc xử lý outlier,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Tách rõ dữ liệu gốc dữ liệu staging và dữ liệu dùng cho biểu đồ,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+Tổng hợp kết quả EDA,Tạo notebook hoặc script EDA có thể chạy lại,,Hoàn thành,EDA/src/10_eda_summary.py
+,Lưu các bảng thống kê mô tả chính,,Hoàn thành,EDA/outputs/tables/10_eda_summary/
+,Lưu các biểu đồ quan trọng,,Hoàn thành,EDA/outputs/figures/10_eda_summary/
+,Viết nhận xét về phân bố kết quả học tập,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md
+,Viết nhận xét về mối liên hệ giữa VLE assessment và kết quả cuối,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md
+,Đề xuất các hướng bài toán nghiệp vụ có thể chọn sau EDA,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md

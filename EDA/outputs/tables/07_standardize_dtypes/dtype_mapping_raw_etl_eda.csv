@@ -1,0 +1,84 @@
+Table,Column,Raw_CSV_Dtype,ETL_Staging_CSV_Dtype,ETL_Intended_Dtype,EDA_Enforced_Dtype
+courses,code_module,object,object,category,category
+courses,code_presentation,object,object,category,category
+courses,module_presentation_length,int64,int64,int64,int64
+assessments,code_module,object,object,category,category
+assessments,code_presentation,object,object,category,category
+assessments,id_assessment,int64,int64,string,string
+assessments,assessment_type,object,object,category,category
+assessments,date,float64,float64,float64,float64
+assessments,weight,float64,float64,float64,float64
+vle,id_site,int64,int64,string,string
+vle,code_module,object,object,category,category
+vle,code_presentation,object,object,category,category
+vle,activity_type,object,object,category,category
+vle,week_from,float64,float64,float64,float64
+vle,week_to,float64,float64,float64,float64
+studentInfo,code_module,object,object,category,category
+studentInfo,code_presentation,object,object,category,category
+studentInfo,id_student,int64,int64,string,string
+studentInfo,gender,object,object,category,category
+studentInfo,region,object,object,category,category
+studentInfo,highest_education,object,object,category,category
+studentInfo,imd_band,object,object,category,category
+studentInfo,age_band,object,object,category,category
+studentInfo,num_of_prev_attempts,int64,int64,int64,int64
+studentInfo,studied_credits,int64,int64,int64,int64
+studentInfo,disability,object,object,category,category
+studentInfo,final_result,object,object,category,category
+studentRegistration,code_module,object,object,category,category
+studentRegistration,code_presentation,object,object,category,category
+studentRegistration,id_student,int64,int64,string,string
+studentRegistration,date_registration,int64,float64,float64,float64
+studentRegistration,date_unregistration,float64,float64,float64,float64
+studentAssessment,id_assessment,int64,int64,string,string
+studentAssessment,id_student,int64,int64,string,string
+studentAssessment,date_submitted,int64,int64,int64,int64
+studentAssessment,is_banked,int64,int64,int64,int64
+studentAssessment,score,int64,float64,float64,float64
+eda_student_summary,code_module,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,code_presentation,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,id_student,N/A (Generated in EDA),N/A,N/A,string
+eda_student_summary,gender,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,region,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,highest_education,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,imd_band,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,age_band,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,num_of_prev_attempts,N/A (Generated in EDA),N/A,N/A,int64
+eda_student_summary,studied_credits,N/A (Generated in EDA),N/A,N/A,int64
+eda_student_summary,disability,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,final_result,N/A (Generated in EDA),N/A,N/A,category
+eda_student_summary,total_click,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,first_activity_date,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,last_activity_date,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,active_days,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,active_weeks,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,interacted_sites,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,resource_types_used,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,submitted_assessments,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,submitted_records,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,late_submissions,N/A (Generated in EDA),N/A,N/A,int64
+eda_student_summary,avg_score,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,banked_assessments,N/A (Generated in EDA),N/A,N/A,int64
+eda_student_summary,score_weight_product_sum,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,submitted_weight_sum,N/A (Generated in EDA),N/A,N/A,float64
+eda_student_summary,weighted_score,N/A (Generated in EDA),N/A,N/A,float64
+eda_weekly_activity,code_module,N/A (Generated in EDA),N/A,N/A,category
+eda_weekly_activity,code_presentation,N/A (Generated in EDA),N/A,N/A,category
+eda_weekly_activity,id_student,N/A (Generated in EDA),N/A,N/A,string
+eda_weekly_activity,study_week,N/A (Generated in EDA),N/A,N/A,int64
+eda_weekly_activity,weekly_click,N/A (Generated in EDA),N/A,N/A,int64
+eda_weekly_activity,active_days,N/A (Generated in EDA),N/A,N/A,int64
+eda_weekly_activity,interacted_sites,N/A (Generated in EDA),N/A,N/A,int64
+eda_assessment_progress,code_module,N/A (Generated in EDA),N/A,N/A,category
+eda_assessment_progress,code_presentation,N/A (Generated in EDA),N/A,N/A,category
+eda_assessment_progress,id_student,N/A (Generated in EDA),N/A,N/A,string
+eda_assessment_progress,id_assessment,N/A (Generated in EDA),N/A,N/A,string
+eda_assessment_progress,assessment_type,N/A (Generated in EDA),N/A,N/A,category
+eda_assessment_progress,date,N/A (Generated in EDA),N/A,N/A,float64
+eda_assessment_progress,date_submitted,N/A (Generated in EDA),N/A,N/A,int64
+eda_assessment_progress,is_late,N/A (Generated in EDA),N/A,N/A,bool
+eda_assessment_progress,is_banked,N/A (Generated in EDA),N/A,N/A,int64
+eda_assessment_progress,score,N/A (Generated in EDA),N/A,N/A,float64
+eda_assessment_progress,weight,N/A (Generated in EDA),N/A,N/A,float64
+eda_assessment_progress,score_weight_product,N/A (Generated in EDA),N/A,N/A,float64
