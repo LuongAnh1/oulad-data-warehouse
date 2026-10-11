@@ -5,6 +5,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 NOTEBOOKS_DIR = PROJECT_ROOT / 'EDA' / 'notebooks'
 
 def create_nb(filename, cells):
+    for idx, cell in enumerate(cells):
+        cell.setdefault("id", f"cell-{idx:02d}")
     nb = {
         "cells": cells,
         "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}},
@@ -12,6 +14,7 @@ def create_nb(filename, cells):
     }
     with open(NOTEBOOKS_DIR / filename, 'w', encoding='utf-8') as f:
         json.dump(nb, f, indent=1, ensure_ascii=False)
+        f.write("\n")
 
 def md(text):
     return {"cell_type": "markdown", "metadata": {}, "source": [text + "\n"]}
@@ -19,11 +22,23 @@ def md(text):
 def code(text):
     return {"cell_type": "code", "execution_count": None, "metadata": {}, "outputs": [], "source": [text]}
 
+NOTEBOOK_ROOT_HELPER = """def find_project_root(start=None):
+    start = Path(start or Path.cwd()).resolve()
+    for path in [start, *start.parents]:
+        if (path / 'EDA').exists() and (path / 'ETL').exists():
+            return path
+    raise FileNotFoundError('Khong tim thay thu muc goc du an chua EDA/ va ETL/.')
+
+PROJECT_ROOT = find_project_root()
+EDA_DIR = PROJECT_ROOT / 'EDA'
+ETL_DIR = PROJECT_ROOT / 'ETL'
+"""
+
 cells = [
     md("# Module 10: Tổng hợp kết quả EDA (Chạy độc lập)\n\nNotebook này được thiết kế như một công cụ độc lập, đáp ứng trọn vẹn 6 yêu cầu chốt hạ của Module 10."),
 
     md("## 1. Môi trường và Dữ liệu (Có thể chạy lại)"),
-    code("import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport os\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# Thiết lập đường dẫn tương đối\nDATA_DIR = '../../ETL/eda_data'\nOUT_TABLES = '../outputs/tables/10_eda_summary'\nOUT_FIGS = '../outputs/figures/10_eda_summary'\nos.makedirs(OUT_TABLES, exist_ok=True)\nos.makedirs(OUT_FIGS, exist_ok=True)\n\n# Tải dữ liệu tổng hợp sinh viên\ndf_summary = pd.read_csv(f'{DATA_DIR}/eda_student_summary.csv')\ndf_summary['final_result'] = df_summary['final_result'].astype('category')\nprint(f'Đã tải {len(df_summary)} bản ghi từ dataset EDA.')"),
+    code("import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom pathlib import Path\nimport warnings\nwarnings.filterwarnings('ignore')\n\n" + NOTEBOOK_ROOT_HELPER + "\nDATA_DIR = ETL_DIR / 'eda_data'\nOUT_TABLES = EDA_DIR / 'outputs' / 'tables' / '10_eda_summary'\nOUT_FIGS = EDA_DIR / 'outputs' / 'figures' / '10_eda_summary'\nOUT_TABLES.mkdir(parents=True, exist_ok=True)\nOUT_FIGS.mkdir(parents=True, exist_ok=True)\n\nstudent_summary_path = DATA_DIR / 'eda_student_summary.csv'\nif not student_summary_path.exists():\n    raise FileNotFoundError(f'Khong tim thay {student_summary_path}. Hay chay ETL truoc de tao ETL/eda_data.')\n\n# Tải dữ liệu tổng hợp sinh viên\ndf_summary = pd.read_csv(student_summary_path)\ndf_summary['final_result'] = df_summary['final_result'].astype('category')\nprint(f'Đã tải {len(df_summary)} bản ghi từ dataset EDA.')"),
 
     md("## 2. Lưu các bảng thống kê mô tả chính"),
     code("# 2.1 Tính toán bảng thống kê mô tả cho các biến số học quan trọng\ndesc_stats = df_summary[['total_click', 'active_days', 'avg_score', 'studied_credits']].describe()\ndesc_stats.to_csv(f'{OUT_TABLES}/descriptive_statistics.csv')\n\n# 2.2 Tính toán bảng phân bố hạng mục (categorical)\ncat_stats = df_summary['final_result'].value_counts().reset_index()\ncat_stats.columns = ['final_result', 'count']\ncat_stats.to_csv(f'{OUT_TABLES}/final_result_distribution.csv', index=False)\n\nprint('=== BẢNG THỐNG KÊ MÔ TẢ BIẾN SỐ HỌC ===')\ndisplay(desc_stats)\nprint('\\n=== BẢNG THỐNG KÊ BIẾN KẾT QUẢ ===')\ndisplay(cat_stats)\nprint('\\n(Đã tự động lưu 2 bảng trên dạng CSV vào thư mục outputs/tables/10_eda_summary)')"),
@@ -39,4 +54,4 @@ cells = [
 ]
 
 create_nb("10_eda_summary_eda.ipynb", cells)
-print("Thành công")
+print("Notebook 10 rebuilt successfully.")
