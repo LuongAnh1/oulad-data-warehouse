@@ -1,0 +1,18 @@
+﻿Loại kiểm tra,Bảng,Cột / Khóa liên quan,Số lượng lỗi,Mô tả
+Duplicate,courses,All columns,0,Không có dòng trùng lặp.
+Duplicate,assessments,All columns,0,Không có dòng trùng lặp.
+Duplicate,vle,All columns,0,Không có dòng trùng lặp.
+Duplicate,studentInfo,All columns,0,Không có dòng trùng lặp.
+Duplicate,studentRegistration,All columns,0,Không có dòng trùng lặp.
+Duplicate,studentAssessment,All columns,0,Không có dòng trùng lặp.
+Duplicate,studentVle,All columns,0,Không có dòng trùng lặp.
+Foreign Key,assessments,"-> courses via code_module, code_presentation",0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,vle,"-> courses via code_module, code_presentation",0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentInfo,"-> courses via code_module, code_presentation",0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentRegistration,"-> courses via code_module, code_presentation",0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentRegistration,-> studentInfo via id_student,0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentAssessment,-> assessments via id_assessment,0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentAssessment,-> studentInfo via id_student,0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentVle,-> vle via id_site,0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentVle,-> studentInfo via id_student,0,Toàn vẹn khóa dữ liệu được đảm bảo.
+Foreign Key,studentVle,"-> courses via code_module, code_presentation",0,Toàn vẹn khóa dữ liệu được đảm bảo.

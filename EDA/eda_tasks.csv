@@ -40,29 +40,29 @@ Phân tích mẫu và xu hướng theo thời gian,Tổng hợp sum_click theo t
 ,Phát hiện giai đoạn sinh viên bắt đầu giảm tương tác,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
 ,Phân tích tỷ lệ hủy đăng ký theo thời gian,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
 ,Tạo checkpoint theo ngày 14 28 42 56 nếu cần cho phân tích sau,,Hoàn thành,EDA/docs/06-time-trends/06_time_trends_report.md; EDA/src/06_analyze_time_trends.py
-Chuẩn hóa kiểu dữ liệu phục vụ EDA,Kiểm tra kiểu dữ liệu sau khi đọc CSV,,,
-,Chuyển các cột ID về kiểu phù hợp,,,
-,Xác định các biến phân loại như code_module code_presentation assessment_type activity_type final_result,,,
-,Xử lý các cột ngày tương đối như số nguyên,,,
-,Chuyển score weight sum_click về kiểu số,,,
-,Kiểm tra lại kiểu dữ liệu sau khi gộp studentVle,,,
-Trực quan hóa dữ liệu,Vẽ biểu đồ phân bố final_result,,,
-,Vẽ biểu đồ phân bố điểm assessment,,,
-,Vẽ biểu đồ tổng click VLE,,,
-,Vẽ biểu đồ tương tác theo tuần học,,,
-,Vẽ biểu đồ so sánh các nhóm kết quả cuối,,,
-,Vẽ biểu đồ missing value nếu cần,,,
-,Vẽ heatmap hoặc biểu đồ tương quan nếu phù hợp,,,
-,Tạo nhóm biểu đồ tổng hợp cho module-presentation,,,
-Nâng chất lượng dữ liệu,Ghi lại các vấn đề dữ liệu phát hiện được,,,
-,Kiểm tra duplicate theo khóa logic,,,
-,Kiểm tra khóa ngoại không khớp giữa các bảng,,,
-,Ghi lại quy tắc xử lý missing value,,,
-,Ghi lại quy tắc xử lý outlier,,,
-,Tách rõ dữ liệu gốc dữ liệu staging và dữ liệu dùng cho biểu đồ,,,
-Tổng hợp kết quả EDA,Tạo notebook hoặc script EDA có thể chạy lại,,,
-,Lưu các bảng thống kê mô tả chính,,,
-,Lưu các biểu đồ quan trọng,,,
-,Viết nhận xét về phân bố kết quả học tập,,,
-,Viết nhận xét về mối liên hệ giữa VLE assessment và kết quả cuối,,,
-,Đề xuất các hướng bài toán nghiệp vụ có thể chọn sau EDA,,,
+Chuẩn hóa kiểu dữ liệu phục vụ EDA,Kiểm tra kiểu dữ liệu sau khi đọc CSV,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Chuyển các cột ID về kiểu phù hợp,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Xác định các biến phân loại như code_module code_presentation assessment_type activity_type final_result,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Xử lý các cột ngày tương đối như số nguyên,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Chuyển score weight sum_click về kiểu số,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+,Kiểm tra lại kiểu dữ liệu sau khi gộp studentVle,,Hoàn thành,EDA/docs/07-standardize-dtypes/07_standardize_dtypes_report.md; EDA/src/07_standardize_dtypes.py
+Trực quan hóa dữ liệu,Vẽ biểu đồ phân bố final_result,,Hoàn thành,EDA/outputs/figures/08_visualization/1_final_result_distribution.png
+,Vẽ biểu đồ phân bố điểm assessment,,Hoàn thành,EDA/outputs/figures/08_visualization/2_avg_score_distribution.png
+,Vẽ biểu đồ tổng click VLE,,Hoàn thành,EDA/outputs/figures/08_visualization/3_total_click_distribution.png
+,Vẽ biểu đồ tương tác theo tuần học,,Hoàn thành,EDA/outputs/figures/08_visualization/4_weekly_interaction_by_result.png
+,Vẽ biểu đồ so sánh các nhóm kết quả cuối,,Hoàn thành,EDA/outputs/figures/08_visualization/5_total_click_by_final_result.png
+,Vẽ biểu đồ missing value nếu cần,,Hoàn thành,EDA/outputs/figures/08_visualization/6_missing_value_chart.png
+,Vẽ heatmap hoặc biểu đồ tương quan nếu phù hợp,,Hoàn thành,EDA/outputs/figures/08_visualization/7_correlation_heatmap.png
+,Tạo nhóm biểu đồ tổng hợp cho module-presentation,,Hoàn thành,EDA/outputs/figures/08_visualization/8_dashboard_module_presentation.png
+Nâng chất lượng dữ liệu,Ghi lại các vấn đề dữ liệu phát hiện được,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Kiểm tra duplicate theo khóa logic,,Hoàn thành,EDA/outputs/tables/09_data_quality/data_quality_issues.csv
+,Kiểm tra khóa ngoại không khớp giữa các bảng,,Hoàn thành,EDA/outputs/tables/09_data_quality/data_quality_issues.csv
+,Ghi lại quy tắc xử lý missing value,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Ghi lại quy tắc xử lý outlier,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+,Tách rõ dữ liệu gốc dữ liệu staging và dữ liệu dùng cho biểu đồ,,Hoàn thành,EDA/docs/09-data-quality/09_data_quality_insights.md
+Tổng hợp kết quả EDA,Tạo notebook hoặc script EDA có thể chạy lại,,Hoàn thành,EDA/src/10_eda_summary.py
+,Lưu các bảng thống kê mô tả chính,,Hoàn thành,EDA/outputs/tables/10_eda_summary/
+,Lưu các biểu đồ quan trọng,,Hoàn thành,EDA/outputs/figures/10_eda_summary/
+,Viết nhận xét về phân bố kết quả học tập,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md
+,Viết nhận xét về mối liên hệ giữa VLE assessment và kết quả cuối,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md
+,Đề xuất các hướng bài toán nghiệp vụ có thể chọn sau EDA,,Hoàn thành,EDA/docs/10-eda-summary/10_eda_summary_report.md
