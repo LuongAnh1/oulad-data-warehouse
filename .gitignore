@@ -20,3 +20,6 @@ temp/
 
 # Generated ELT/EDA outputs
 ETL/eda_data/*.csv
+
+# Local LaTeX report folder
+KHO 2026.1/
